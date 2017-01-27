@@ -10,38 +10,36 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
     <style>
-      .unverified { color: darkred; }
       .md-list-item-text { line-height: 18px; padding-bottom: 12px; padding-top: 12px }
     </style>
   </head>
   <body ng-app="TrumpActionsApp" ng-cloak>
-    <div ng-controller="TrumpActionsController as ctrl" layout="column">
+    <div ng-controller="TrumpActionsController as ctrl" layout="column" flex="" layout-fill="">
 
-      <md-toolbar layout="row" class="md-hue-2">
+      <md-toolbar md-scroll-shrink="" layout="row" class="md-hue-2">
         <div class="md-toolbar-tools">
           <span>Trump Administration Actions</span>
         </div>
       </md-toolbar>
 
       <md-content>
-        <md-list class="md-dense">
 
-          <md-subheader ng-repeat-start="entry in ctrl.actions">{{entry.date}}</md-subheader>
-          <div ng-repeat="action in entry.actions">
-            <md-list-item ng-click="action.open = !action.open">
-              <div class="md-list-item-text" ng-class="{unverified: !action.sources.length}">
-                {{action.desc}}
-              </div>
-            </md-list-item>
-            <ul ng-if="action.open">
-              <span ng-repeat="source in action.sources">
-                <a href="{{source}}" target="_blank">{{source}}</a>
-              </span>
-            </ul>
-          </div>
-          <md-divider ng-repeat-end></md-divider>
-
-        </md-list>
+        <md-section ng-repeat="entry in ctrl.actions">
+          <md-subheader class="md-accent">{{entry.date}}</md-subheader>
+          <md-list class="md-dense">
+            <div ng-repeat="action in entry.actions">
+              <md-list-item ng-click="action.open = !action.open">
+                <div class="md-list-item-text">{{action.desc}}</div>
+              </md-list-item>
+              <ul ng-if="action.open">
+                <span ng-repeat="source in action.sources">
+                  <a href="{{source}}" target="_blank">{{source}}</a>
+                </span>
+              </ul>
+            </div>
+          </md-list>
+          <md-divider></md-divider>
+        </md-section>
       </md-content>
     </div>
     <script src="data.js"></script>
