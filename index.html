@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-aria.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+    <style>
+      .unverified { color: darkred; }
+      .md-list-item-text { line-height: 18px; padding-bottom: 12px; padding-top: 12px }
+    </style>
+  </head>
+  <body ng-app="TrumpActionsApp" ng-cloak>
+    <div ng-controller="TrumpActionsController as ctrl" layout="column">
+
+      <md-toolbar layout="row" class="md-hue-2">
+        <div class="md-toolbar-tools">
+          <span>Trump Administration Actions</span>
+        </div>
+      </md-toolbar>
+
+      <md-content>
+        <md-list class="md-dense">
+
+          <md-subheader ng-repeat-start="entry in ctrl.actions">{{entry.date}}</md-subheader>
+          <md-list-item ng-repeat="action in entry.actions" ng-click="action.open = !action.open; console.log($event)">
+            <div class="md-list-item-text" ng-class="{unverified: !action.sources.length}">
+              {{action.desc}}
+              <ul ng-if="action.open">
+                <span ng-repeat="source in action.sources">
+                  <a href="{{source}}" target="_blank" ng-click="console.log($event); $event.stopPropagation()">{{source}}</a>
+                </span>
+              </ul>
+            </div>
+          </md-list-item>
+          <md-divider ng-repeat-end></md-divider>
+
+        </md-list>
+      </md-content>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
