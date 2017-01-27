@@ -27,16 +27,18 @@
         <md-list class="md-dense">
 
           <md-subheader ng-repeat-start="entry in ctrl.actions">{{entry.date}}</md-subheader>
-          <md-list-item ng-repeat="action in entry.actions" ng-click="action.open = !action.open; console.log($event)">
-            <div class="md-list-item-text" ng-class="{unverified: !action.sources.length}">
-              {{action.desc}}
-              <ul ng-if="action.open">
-                <span ng-repeat="source in action.sources">
-                  <a href="{{source}}" target="_blank" ng-click="console.log($event); $event.stopPropagation()">{{source}}</a>
-                </span>
-              </ul>
-            </div>
-          </md-list-item>
+          <div ng-repeat="action in entry.actions">
+            <md-list-item ng-click="action.open = !action.open">
+              <div class="md-list-item-text" ng-class="{unverified: !action.sources.length}">
+                {{action.desc}}
+              </div>
+            </md-list-item>
+            <ul ng-if="action.open">
+              <span ng-repeat="source in action.sources">
+                <a href="{{source}}" target="_blank">{{source}}</a>
+              </span>
+            </ul>
+          </div>
           <md-divider ng-repeat-end></md-divider>
 
         </md-list>

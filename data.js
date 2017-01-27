@@ -71,7 +71,7 @@ var data = [
   ]}, {'date': 'January 20th', 'actions': [
     {
       'desc': 'DT ordered all regulatory powers of all federal agencies frozen.',
-      'sources': []
+      'sources': ['http://www.cnn.com/2017/01/20/politics/reince-priebus-regulations-memo/']
     },
     {
       'desc': 'DT ordered the National Parks Service to stop using social media after RTing factual, side by side photos of the crowds for the 2009 and 2017 inaugurations.',
@@ -81,65 +81,53 @@ var data = [
       'desc': 'Roughly 230 protestors were arrested in DC and face unprecedented felony riot charges. Among them were legal observers, journalists, and medics.',
       'sources': ['https://www.nytimes.com/2017/01/25/business/media/journalists-arrested-trump-inauguration.html'],
     },
-    {
-      'desc': 'A member of the International Workers of the World was shot in the stomach at an anti-fascist protest in Seattle. He remains in critical condition.',
-      'sources': []
-    },
   ]}, {'date': 'January 21st, 2017', 'actions': [
     {
       'desc': 'DT brought a group of 40 cheerleaders to a meeting with the CIA to cheer for him during a speech that consisted almost entirely of framing himself as the victim of dishonest press.',
-      'sources': []
+      'sources': ['http://www.cbsnews.com/news/sources-say-theres-a-sense-of-unease-in-intel-community-after-trump-cia-visit/']
     },
     {
       'desc': 'White House Press Secretary Sean Spicer held a press conference largely to attack the press for accurately reporting the size of attendance at the inaugural festivities, saying that the inauguration had the largest audience of any in history, "period."',
-      'sources': []
+      'sources': ['http://www.cbsnews.com/news/sean-spicer-media-coverage-inauguration-crowd/']
     },
   ]}, {'date': 'January 22nd, 2017', 'actions': [
     {
       'desc': 'White House advisor Kellyann Conway defended Spicer\'s lies as "alternative facts" on national television news.',
-      'sources': []
-    },
-    {
-      'desc': 'DT appeared to blow a kiss to director James Comey during a meeting with the FBI, and then opened his arms in a gesture of strange, paternal affection, before hugging him with a pat on the back.',
-      'sources': []
+      'sources': ['https://www.theguardian.com/us-news/2017/jan/22/donald-trump-kellyanne-conway-inauguration-alternative-facts']
     },
   ]}, {'date': 'January 23rd, 2017', 'actions': [
     {
       'desc': 'DT reinstated the global gag order, which defunds international organizations that even mention abortion as a medical option.',
-      'sources': []
+      'sources': ['https://www.washingtonpost.com/news/post-politics/wp/2017/01/23/trump-signs-executive-orders-on-federal-hiring-freeze-tpp-withdrawal-and-global-abortion-gag/']
     },
     {
       'desc': 'Spicer said that the US will not tolerate China\'s expansion onto islands in the South China Sea, essentially threatening war with China.',
-      'sources': []
+      'sources': ['https://www.washingtonpost.com/news/worldviews/wp/2017/01/24/is-trump-ready-for-war-in-the-south-china-sea-or-is-his-team-just-not-being-clear/']
     },
     {
       'desc': 'DT repeated the lie that 3-5 million people voted "illegally" thus costing him the popular vote.',
-      'sources': []
-    },
-    {
-      'desc': 'It was announced that the man who shot the anti-fascist protester in Seattle was released without charges, despite turning himself in.',
-      'sources': []
+      'sources': ['https://www.nytimes.com/2017/01/23/us/politics/donald-trump-congress-democrats.html']
     },
   ]}, {'date': 'January 24th, 2017', 'actions': [
     {
       'desc': 'Spicer reiterated the lie that 3-5 million people voted "illegally" thus costing DT the popular vote.',
-      'sources': []
+      'sources': ['http://www.usatoday.com/story/news/politics/2017/01/24/donald-trump-sean-spicer-lindsey-graham/96994440/']
     },
     {
       'desc': 'DT tweeted a picture from his personal Twitter account of a photo he says depicts the crowd at his inauguration and will hang in the White House press room. The photo is of the 2009 inauguration of 44th President Barack Obama, and is curiously dated January 21st, 2017, the day AFTER the inauguration and the day of the Women\'s March, the largest inauguration related protest in history.',
-      'sources': []
+      'sources': ['https://www.bostonglobe.com/news/nation/2017/01/24/trump-posts-tweet-inauguration-crowd-photo-but-date-wrong/GQyzkYahTv3Gnd9uj142OI/story.html']
     },
     {
       'desc': 'The EPA was ordered to stop communicating with the public through social media or the press and to freeze all grants and contracts.',
-      'sources': []
+      'sources': ['http://fortune.com/2017/01/24/donald-trump-epa-contract-freeze-media/']
     },
     {
       'desc': 'The USDA was ordered to stop communicating with the public through social media or the press and to stop publishing any papers or research. All communication with the press would also have to be authorized and vetted by the White House.',
-      'sources': []
+      'sources': ['http://www.geekwire.com/2017/epa-usda-latest-targets-trumps-social-media-gag-orders/']
     },
     {
       'desc': 'HR7, a bill that would prohibit federal funding not only to abortion service providers, but to any insurance coverage, including Medicaid, that provides abortion coverage, went to the floor of the House for a vote.',
-      'sources': []
+      'sources': ['https://www.theguardian.com/world/2017/jan/25/abortion-bill-hr7-donald-trump-republicans']
     },
     {
       'desc': 'Director of the Department of Health and Human Service nominee Tom Price characterized federal guidelines on transgender equality as "absurd."',
