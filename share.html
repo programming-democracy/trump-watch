@@ -1,0 +1,28 @@
+<md-dialog aria-label="Sharing">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Share weekly report</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="cancel()">
+        <md-icon md-font-set="material-icons">close</md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-dialog-content>
+    <div class="md-dialog-content">
+      <p>To share, just copy and paste everything below into your status!</p>
+
+      <h3>Last week in Trump's America</h3>
+      <p ng-repeat="entry in dialogCtrl.entries">
+        {{entry.date}}:<br>
+        <span ng-repeat="action in entry.actions">
+          * {{action.desc}}<br>
+        </span>
+      </p>
+      <p>Sources and analysis at <a href="http://programmingdemocracy.org/trumpwatch/">
+        http://programmingdemocracy.org/trumpwatch/</a>.</p>
+      <p>Copy and paste this to your status.</p>
+    </div>
+  </md-dialog-content>
+</md-dialog>

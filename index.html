@@ -1,8 +1,14 @@
 <html>
   <head>
+    <meta property="og:url"           content="http://programmingdemocracy.org/trumpwatch/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="TrumpWatch" />
+    <meta property="og:description"   content="Daily summary of Trump's Administration'" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Angular Material style sheet -->
+
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.min.js"></script>
@@ -18,7 +24,14 @@
 
       <md-toolbar md-scroll-shrink="" layout="row" class="md-hue-2">
         <div class="md-toolbar-tools">
-          <span>Trump Administration Actions</span>
+          <h2><span>TrumpWatch</span></h2>
+          <span flex></span>
+          <md-button class="md-icon-button" aria-label="Share" ng-click="ctrl.share()">
+            <md-icon md-font-set="material-icons">share</md-icon>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Info">
+            <md-icon md-font-set="material-icons">info</md-icon>
+          </md-button>
         </div>
       </md-toolbar>
 
@@ -41,6 +54,7 @@
           <md-divider></md-divider>
         </md-section>
       </md-content>
+
     </div>
     <script src="data.js"></script>
     <script src="app.js"></script>
