@@ -33,7 +33,7 @@
           <md-button class="md-icon-button" aria-label="Share" ng-click="ctrl.share()">
             <md-icon md-font-set="material-icons">share</md-icon>
           </md-button>
-          <md-button class="md-icon-button" aria-label="Info">
+          <md-button class="md-icon-button" aria-label="Info" ng-click="ctrl.info()">
             <md-icon md-font-set="material-icons">info</md-icon>
           </md-button>
         </div>
@@ -42,7 +42,7 @@
       <md-content>
 
         <md-section ng-repeat="entry in ctrl.actions">
-          <md-subheader class="md-accent">{{entry.date}}</md-subheader>
+          <md-subheader class="md-accent">{{entry.dateObj | date}}</md-subheader>
           <md-list class="md-dense">
             <div ng-repeat="action in entry.actions">
               <md-list-item ng-click="action.open = !action.open">
@@ -62,5 +62,15 @@
     </div>
     <script src="data.js"></script>
     <script src="app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-91025089-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
