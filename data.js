@@ -6,67 +6,67 @@ var data = [
     },
     {
       'desc': 'DT said that he would cut funding for the National Endowment for the Arts.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://fortune.com/2017/01/19/trump-arts-economy-cuts/']
     },
     {
       'desc': 'DT said that he would cut funding for the National Endowment for the Humanities.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Corporation for Public Broadcasting.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['https://www.washingtonpost.com/news/the-fix/wp/2017/01/19/trump-reportedly-wants-to-cut-cultural-programs-that-make-up-0-02-percent-of-federal-spending/']
     },
     {
       'desc': 'DT said that he would cut funding for the Minority Business Development Agency.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Economic Development Administration.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the International Trade Administration.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Manufacturing Extension Partnership.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Office of Community Oriented Policing Services.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Legal Services Corporation.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Civil Rights Division of the DOJ.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Environmental and Natural Resources Division of the DOJ.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Overseas Private Investment Corporation.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the UN Intergovernmental Panel on Climate Change.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Office of Electricity Deliverability and Energy Reliability.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Office of Energy Efficiency and Renewable Energy.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
     {
       'desc': 'DT said that he would cut funding for the Office of Fossil Energy.',
-      'sources': ['http://www.newsweek.com/donald-trump-violence-against-women-federal-funding-budget-cuts-544710']
+      'sources': ['http://thehill.com/policy/finance/314991-trump-team-prepares-dramatic-cuts']
     },
   ]}, {'date': '2017-01-20', 'actions': [
     {
@@ -75,7 +75,7 @@ var data = [
     },
     {
       'desc': 'DT ordered the National Parks Service to stop using social media after RTing factual, side by side photos of the crowds for the 2009 and 2017 inaugurations.',
-      'sources': []
+      'sources': ['http://www.chicagotribune.com/news/nationworld/politics/ct-interior-department-banned-from-twitter-20170120-story.html']
     },
     {
       'desc': 'Roughly 230 protestors were arrested in DC and face unprecedented felony riot charges. Among them were legal observers, journalists, and medics.',
@@ -114,7 +114,7 @@ var data = [
       'sources': ['http://www.usatoday.com/story/news/politics/2017/01/24/donald-trump-sean-spicer-lindsey-graham/96994440/']
     },
     {
-      'desc': 'DT tweeted a picture from his personal Twitter account of a photo he says depicts the crowd at his inauguration and will hang in the White House press room. The photo is of the 2009 inauguration of 44th President Barack Obama, and is curiously dated January 21st, 2017, the day AFTER the inauguration and the day of the Women\'s March, the largest inauguration related protest in history.',
+      'desc': 'DT tweeted a picture he says depicts the crowd at his inauguration and will hang in the White House press room. The photo is of the 2009 inauguration of 44th President Barack Obama.',
       'sources': ['https://www.bostonglobe.com/news/nation/2017/01/24/trump-posts-tweet-inauguration-crowd-photo-but-date-wrong/GQyzkYahTv3Gnd9uj142OI/story.html']
     },
     {

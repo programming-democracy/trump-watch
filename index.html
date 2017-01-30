@@ -19,11 +19,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-aria.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
-    <style>
-      .md-list-item-text { line-height: 18px; padding-bottom: 12px; padding-top: 12px }
-    </style>
   </head>
-  <body ng-app="TrumpActionsApp" ng-cloak>
+  <body ng-app="TrumpActionsApp" autoscroll="true" ng-cloak>
     <div ng-controller="TrumpActionsController as ctrl" layout="column" flex="" layout-fill="">
 
       <md-toolbar md-scroll-shrink="" layout="row" class="md-hue-2">
@@ -41,19 +38,19 @@
 
       <md-content>
 
-        <md-section ng-repeat="entry in ctrl.actions">
+        <md-section ng-repeat="entry in ctrl.actions" id="{{entry.date}}">
           <md-subheader class="md-accent">{{entry.dateObj | date}}</md-subheader>
-          <md-list class="md-dense">
-            <div ng-repeat="action in entry.actions">
-              <md-list-item ng-click="action.open = !action.open">
-                <div class="md-list-item-text">{{action.desc}}</div>
-              </md-list-item>
-              <ul ng-if="action.open">
-                <span ng-repeat="source in action.sources">
-                  <a href="{{source}}" target="_blank">{{source}}</a>
-                </span>
-              </ul>
-            </div>
+          <md-list ng-repeat="action in entry.actions">
+            <md-list-item ng-click="action.open = !action.open" class="md-2-line">
+              <md-icon md-font-set="material-icons" ng-if="!action.open">expand_more</md-icon>
+              <md-icon md-font-set="material-icons" ng-if="action.open">expand_less</md-icon>
+              <div class="md-list-item-text"><h3>{{action.desc}}</h3></div>
+            </md-list-item>
+            <ul ng-if="action.open">
+              <span ng-repeat="source in action.sources">
+                <a href="{{source}}" target="_blank">{{source}}</a>
+              </span>
+            </ul>
           </md-list>
           <md-divider></md-divider>
         </md-section>

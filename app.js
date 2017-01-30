@@ -31,9 +31,6 @@ var MainController = function($mdDialog) {
     action.dateObj = date;
   });
 
-  // TODO: scroll
-
-
   this.share = function(ev) {
     $mdDialog.show({
       controller: ShareController,
